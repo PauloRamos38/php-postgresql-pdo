@@ -1,7 +1,7 @@
 <?php
 
-$host = "localhost";
-$porta = "5432";
+$host = "127.0.0.1";
+$porta = "5433";
 $banco = "bdaula1";
 $usuario = "postgres";
 $senha = "SUA_SENHA_AQUI";
