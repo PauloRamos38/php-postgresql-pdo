@@ -11,7 +11,6 @@ Projeto simples em PHP demonstrando como conectar uma aplicação a um banco de 
 ## Arquivos do projeto
 
 - `conexao.php` — configura a conexão com o banco de dados.
-- `conexao_exemplo.php` — exemplo de configuração da conexão.
 - `teste.php` — arquivo simples para testar se a conexão foi realizada.
 - `.gitignore` — evita o envio de arquivos locais e sensíveis.
 
@@ -25,7 +24,7 @@ Antes de executar, tenha instalado:
 
 ## Configuração
 
-Use o arquivo `conexao_exemplo.php` como referência e configure os dados do seu banco no arquivo `conexao.php`.
+Configure os dados do seu banco diretamente no arquivo `conexao.php`.
 
 Exemplo de dados que podem ser ajustados:
 
@@ -34,10 +33,7 @@ $host = "localhost";
 $porta = "5432";
 $banco = "seu_banco";
 $usuario = "seu_usuario";
-$senha = "sua_senha";
-```
-
-> Não envie senhas reais ou arquivos de configuração privados para o GitHub.
+$senha = getenv('PG_PASS') ?: '';
 
 ## Como testar
 

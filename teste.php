@@ -1,2 +1,4 @@
 <?php
-echo "Olá, Paulo! O PHP está funcionando.\n";
+require_once __DIR__ . '/conexao.php';
+
+echo "Teste concluído: PHP e PostgreSQL estão funcionando.\n";
